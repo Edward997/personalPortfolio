@@ -1,12 +1,10 @@
-<section class="w-full h-[500px] py-20 md:py-32 flex justify-center">
+<section class="w-full py-1 md:py-20 flex justify-center mt-10 md:mt-0">
   <div class="container px-4 md:px-6 space-y-8 text-center">
     <div class="space-y-4">
       <h2 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
         About Me
       </h2>
-      <p
-        class="max-w-[700px] mx-auto text-gray-500 text-lg md:text-xl"
-      >
+      <p class="max-w-[700px] mx-auto text-gray-500 text-lg md:text-xl">
         I'm a recent software development graduate with a passion for expanding
         my knowledge and growing professionally. Specializing in web and desktop
         application development, I thrive in learning new technologies through
@@ -14,10 +12,7 @@
         I collaborated with teams to create solutions, enhancing my teamwork and
         problem-solving skills.
       </p>
-
-      <p
-        class="max-w-[700px] mx-auto text-gray-500 text-lg md:text-xl"
-      >
+      <p class="max-w-[700px] mx-auto text-gray-500 text-lg md:text-xl">
         Professionally, I led the development of the Digital Document Center
         module, which involved designing flow charts, creating system views with
         Figma, and developing backend controllers with CRUD operations. I also
@@ -29,16 +24,17 @@
   </div>
 </section>
 
-<section class="w-full py-20 md:py-32 flex justify-center">
+
+<section class="w-full py-10 md:py-32 flex justify-center mt-10 md:mt-0">
   <div class="container px-4 md:px-6">
     <div class="space-y-8">
-      <div class="space-y-2">
+      <div class="space-y-2 text-center md:text-left">
         <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Skills</h2>
-        <p class="text-gray-500 max-w-[700px]">
+        <p class="text-gray-500 max-w-[700px] mx-auto md:mx-0">
           I'm proficient in a wide range of technologies and tools to deliver exceptional web experiences.
         </p>
       </div>
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <ng-container *ngFor="let icon of icons">
           <div class="flex items-center space-x-3">
             <img [src]="icon.path" [alt]="icon.alt" [class]="icon.className" />
@@ -49,3 +45,4 @@
     </div>
   </div>
 </section>
+
