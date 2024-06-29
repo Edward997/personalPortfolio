@@ -1,4 +1,4 @@
-<section id="contact" class="w-full pt-5 pb-20 bg-gray-100 dark:bg-gray-900 flex flex-col items-center justify-center">
+<section id="contact" class="w-full pt-5 pb-20 bg-gray-100 flex flex-col items-center justify-center">
   <div class="container px-4 md:px-6 space-y-8">
     <div class="text-center space-y-4 mt-5 md:mt-0">
       <h2 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Get In Touch</h2>
@@ -6,12 +6,13 @@
         Have a project in mind? Let's work together!
       </p>
     </div>
-    <form action="#" method="post" class="max-w-[700px] mx-auto space-y-6">
-      <div class="space-y-4">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="max-w-[700px] mx-auto space-y-4">
+      <div class="space-y-2">
         <input
           type="text"
           name="name"
           id="name"
+          ngModel
           placeholder="Your Name"
           class="w-full rounded-lg border border-gray-300 px-4 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
         />
@@ -19,15 +20,17 @@
           type="email"
           name="email"
           id="email"
+          ngModel
           placeholder="Your Email"
           class="w-full rounded-lg border border-gray-300 px-4 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
         />
         <textarea
           name="message"
           id="message"
+          ngModel
           placeholder="Your Message"
           class="w-full rounded-lg border border-gray-300 px-4 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-          rows="6"
+          rows="4"
         ></textarea>
       </div>
       <div class="flex justify-center">
@@ -51,14 +54,14 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="h-6 w-6 text-gray-500 dark:text-gray-400"
+          class="h-6 w-6 text-gray-500"
         >
           <rect width="20" height="16" x="2" y="4" rx="2"></rect>
           <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
         </svg>
         <div>
           <h3 class="text-lg font-medium">Email</h3>
-          <p class="text-gray-500 dark:text-gray-400">edward.navarrete7&#64;gmail.com</p>
+          <p class="text-gray-500">edward.navarrete7&#64;gmail.com</p>
         </div>
       </div>
       <div class="flex items-center space-x-4">
@@ -72,13 +75,13 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="h-6 w-6 text-gray-500 dark:text-gray-400"
+          class="h-6 w-6 text-gray-500 "
         >
           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
         </svg>
         <div>
           <h3 class="text-lg font-medium">Phone</h3>
-          <p class="text-gray-500 dark:text-gray-400">+52 (712) 256-22-57</p>
+          <p class="text-gray-500">+52 (712) 256-22-57</p>
         </div>
       </div>
       <div class="flex items-center space-x-4">
@@ -92,20 +95,20 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="h-6 w-6 text-gray-500 dark:text-gray-400"
+          class="h-6 w-6 text-gray-500"
         >
           <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
         </svg>
         <div>
           <h3 class="text-lg font-medium">Social</h3>
           <div class="flex space-x-4">
-            <a class="text-gray-500 dark:text-gray-400 hover:underline" href="https://www.linkedin.com/in/edward-navarrete-055341228/" target="_blank">
+            <a class="text-gray-500 hover:underline" href="https://www.linkedin.com/in/edward-navarrete-055341228/" target="_blank">
               LinkedIn
             </a>
-            <a class="text-gray-500 dark:text-gray-400 hover:underline" href="https://github.com/Edward997" target="_blank">
+            <a class="text-gray-500  hover:underline" href="https://github.com/Edward997" target="_blank">
               GitHub
             </a>
-            <a class="text-gray-500 dark:text-gray-400 hover:underline" href="https://edward997.github.io/portfolioTeam/" target="_blank">
+            <a class="text-gray-500  hover:underline" href="https://edward997.github.io/portfolioTeam/" target="_blank">
               Team Portfolio
             </a>
           </div>
